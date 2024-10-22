@@ -31,9 +31,9 @@ int main()
     getline(cin, input);
 
     if (isPalindrome(input))
-        cout << "Palindrome!" << endl;
+        cout << "The word entered is a Palindrome!" << endl;
     else
-        cout << "Not a palindrome." << endl;
+        cout << "The word entered is Not a palindrome." << endl;
 
     return 0;
 }

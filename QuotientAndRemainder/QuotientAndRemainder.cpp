@@ -1,14 +1,19 @@
 #include <iostream>
-#include <ctime>
 
-void displayCurrentDateTime()
+void computeQuotientAndRemainder(int a, int b, int &quotient, int &remainder)
 {
-    std::time_t now = std::time(nullptr);
-    std::cout << "Current date and time: " << std::ctime(&now);
+    quotient = a / b;
+    remainder = a % b;
 }
 
 int main()
 {
-    displayCurrentDateTime();
+    int num1, num2, quotient, remainder;
+    std::cout << "Enter two numbers: ";
+    std::cin >> num1 >> num2;
+
+    computeQuotientAndRemainder(num1, num2, quotient, remainder);
+    std::cout << "Quotient: " << quotient << ", Remainder: " << remainder << std::endl;
+
     return 0;
 }

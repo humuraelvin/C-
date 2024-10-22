@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Function to compute the volume of a cube
 double computeVolume(double side)
 {
     return side * side * side;

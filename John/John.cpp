@@ -4,7 +4,7 @@
 
 int main()
 {
-    long long secondsOld = 1000000000; // John's age in seconds
+    long long secondsOld = 1000000000; 
     const int secondsInHour = 3600;
     const int secondsInDay = 24 * secondsInHour;
     const int secondsInWeek = 7 * secondsInDay;

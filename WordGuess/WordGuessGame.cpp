@@ -92,7 +92,7 @@ int main(){
         
         char guess = tolower(input[0]);
 
-        if (!guessedLetters.count(guess)){
+        if (guessedLetters.count(guess)){
             cout<<"You already guessed that letter! "<<endl;
             continue;
         }

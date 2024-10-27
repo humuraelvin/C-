@@ -83,7 +83,7 @@ int main(){
             cout <<"Thanks for playing"<<endl;
             break;
         }
-        
+
         if (input.size() != 1 || !isalpha(input[0]))
         {
             cout <<"Please input a single letter."<<endl;
@@ -92,7 +92,7 @@ int main(){
         
         char guess = tolower(input[0]);
 
-        if (guessedLetters.count(c)){
+        if (!guessedLetters.count(guess)){
             cout<<"You already guessed that letter! "<<endl;
             continue;
         }

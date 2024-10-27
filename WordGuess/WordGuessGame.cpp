@@ -125,8 +125,24 @@ int main(){
         }   
         
     }
-    
 
+    if (chances == 0)
+    {
+        cout << "So sorry but u are Out of chances! The word was: " << wordToGuess << endl;
+    }
+
+
+    cout <<"Do you want to play again (y/n): ";
+    char playAgain;
+    cin >> playAgain;
+
+    if (playAgain == 'y' || playAgain == 'Y')
+    {
+        main();
+    }else {
+        cout <<"Thanks for playing"<<endl;
+    }
+    
 
     return 0;
 }

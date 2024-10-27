@@ -71,7 +71,61 @@ int main(){
     int chances = 6;
 
 
+    while (chances > 0)
+    {
+        displayWord(wordToGuess, guessedLetters);
 
+        cout <<"Guess a letter or type exit to quit: ";
+        string input;
+        cin >>input;
+
+        if (input == "exit"){
+            cout <<"Thanks for playing"<<endl;
+            break;
+        }
+        
+        if (input.size() != 1 || !isalpha(input[0]))
+        {
+            cout <<"Please input a single letter."<<endl;
+            continue;
+        }
+        
+        char guess = tolower(input[0]);
+
+        if (guessedLetters.count(c)){
+            cout<<"You already guessed that letter! "<<endl;
+            continue;
+        }
+
+        guessedLetters.insert(guess);
+
+        if (wordToGuess.find(guess) == string::npos)
+        {
+            chances--;
+            cout<<"Incorrect guess"<<endl;
+            cout<<"Chances left: "<< chances <<endl;
+        }
+        
+
+        bool allGuessed = true;
+
+        for (char c: wordToGuess)
+        {
+            if (!guessedLetters.count(c))
+            {
+                allGuessed = false;
+                break;
+            }
+            
+        }
+
+        if (allGuessed)
+        {
+            cout<<"Congratulations!!! word guessed completely: "<< wordToGuess <<endl;
+        }   
+        
+    }
+    
 
 
     return 0;

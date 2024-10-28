@@ -35,4 +35,6 @@ int main(){
 
     calculateDifference(numbers);
 
+
+    return 0;
 }

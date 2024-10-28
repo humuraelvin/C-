@@ -16,4 +16,5 @@ int main(){
 
     calculatePower(7, 2);
 
+    return 0;
 }

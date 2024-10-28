@@ -7,7 +7,7 @@ int addTwoNums(int a, int b){
 
 int main(){
 
-    addTwoNums(10, 20);
+    cout << "Result: "<<addTwoNums(10, 20) <<endl;
 
     return 0;
 }

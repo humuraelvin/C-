@@ -1,20 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int addTwoNums(int a, int b){
-    return a+b;
-}
-
-int addTwoNums(int a, int b, int c){
-    return a+b+c;
-}
-
-int addTwoNums(double a, double b){
+template <typename T> T addTwoNums(T a, T b){
     return a + b;
 }
 
-int addTwoNums(double a, double b, double c){
-    return a+b+c;
+template <typename T> T addTwoNums(T a, T b, T c){
+    return a + b + c;
 }
 
 int main(){

@@ -14,9 +14,8 @@ int countDigits(int num){
 
 int sumOfDigits(int num){
     if (num == 0)
-    {
         return 0;
-    }
+    
 
     return (num % 10) + sumOfDigits(num / 10);
     
@@ -37,7 +36,7 @@ int main(){
     int sum = sumOfDigits(number);
 
     cout <<"The number of digits in the number is: " << numberOfDigits <<endl;
-    cout <<"The sum of the digits in the number is: " << sumOfDigits <<endl; 
+    cout <<"The sum of the digits in the number is: " << sum <<endl; 
     
 
 }

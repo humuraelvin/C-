@@ -3,7 +3,16 @@ using namespace std;
 
 int  printFactorial(int n){
 
-    return n * printFactorial(n - 1);
+    if (n == 0 || n == 1)
+    {
+        return 1;
+    }else
+    {
+        return n * printFactorial(n - 1);
+    }
+    
+    
+
 
 }
 

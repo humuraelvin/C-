@@ -2,9 +2,9 @@
 using namespace std;
 
 
-class Rectangle
+struct Rectangle
 {
-private:
+// private:
     int width;
     int length;
 public:
@@ -18,11 +18,6 @@ public:
         return width * length;
     }
 
-    void setValues(int w, int l){
-        width = w;
-        length = l;
-    }
-
     void setWidth(int w){
         width = w;
     }
@@ -32,14 +27,15 @@ public:
  int main(){
     Rectangle recta;
 
-    recta.setValues(10, 20);
+    
+
+    recta.setWidth(40);
+    recta.length = 10;
 
     cout <<"The area is: " << recta.area() <<endl;
 
     Rectangle rectb;
 
-    rectb.setValues(10, 30);
-
-    cout <<"The area is: " << rectb.area() <<endl;
+   
 
  }

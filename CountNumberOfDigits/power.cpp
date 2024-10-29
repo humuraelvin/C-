@@ -10,7 +10,7 @@ int findPower(int num, int power){
         return num;
     }else
     {
-        return num * findPower(num, power);
+        return num * findPower(num, power - 1);
     }
     
     

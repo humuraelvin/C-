@@ -30,7 +30,7 @@ int main(){
 
     srand(time(0));
 
-    vector<string> animals = {"elephant", "tiger", "lion", "giraffe"};
+    vector<string> animals = {"snake", "rat", "dog", "bufalo"};
     vector<string> teams = {"barcelona", "arsenal", "milan", "paris"};
     vector<string> movies = {"inception", "avatar", "matrix", "superman"};
 

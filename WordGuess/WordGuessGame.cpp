@@ -63,7 +63,7 @@ int main(){
         break;
     
     default:
-        cout <<"Invaid category choice" <<endl; return 0;
+        cout <<"Invalid category choice" <<endl; return 0;
     }
 
     string wordToGuess = chooseRandomWord(choosenCategory);
@@ -122,6 +122,19 @@ int main(){
         if (allGuessed)
         {
             cout<<"Congratulations!!! word guessed completely: "<< wordToGuess <<endl;
+
+            cout << "Do you want to play again (y/n): ";
+            char playAgain;
+            cin >> playAgain;
+
+            if (playAgain == 'y' || playAgain == 'Y')
+            {
+                main();
+            }
+            else
+            {
+                cout << "Thanks for playing" << endl;
+            }
         }   
         
     }

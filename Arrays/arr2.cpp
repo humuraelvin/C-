@@ -4,9 +4,10 @@ using namespace std;
 
 int main(){
 
-    int numbers[10];
+    int numbers[10] = {14, 15};
 
-    for (int i = 0; i < 10; i++)
+
+    for (int i = 0; i < 20; i++)
     {
         cout <<numbers[i]<<endl;
     }

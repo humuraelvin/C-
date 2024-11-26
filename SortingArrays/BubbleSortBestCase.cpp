@@ -4,22 +4,22 @@ using namespace std;
 int main()
 {
     int size, temp, i = 0;
-    cout << “Enter size : “;
+    cout << "Enter size : ";
     cin >> size;
     int array[size];
 
     // Inputting array elements
     for (int i = 0; i < size; i++)
     {
-        cout << “Enter Element : “;
+        cout << "Enter Element : ";
         cin >> array[i];
     }
 
     // Bubble Sort algorithm (optimized)
-    while (i < size — 1)
+    while (i < size - 1)
     {
         bool flag = false;
-        for (int j = 0; j < size — 1 — i; j++)
+        for (int j = 0; j < size - 1 - i; j++)
         {
             if (array[j] > array[j + 1])
             {
@@ -33,3 +33,12 @@ int main()
             break;
         i++;
     }
+
+    // Outputting the sorted array
+    cout << "Number of iterations : " << i << endl;
+    cout << "Sorted array : ";
+    for (int i = 0; i < size; i++)
+    {
+        cout << array[i] << " ";
+    }
+}

@@ -31,9 +31,11 @@ void quickSort(int a[], int s, int e)
 int main()
 {
 
-    int a[] = {2, 1, 3, 4, 5, 7, -2};
-    quickSort(a, 0, 6);
-    for (int i = 0; i < 7; i++)
+   // int a[] = {2, 1, 3, 4, 5, 7, -2};
+    int a[10] = {9, 7, 2, 5, 4, 10, 3, 8, 1, 6};
+
+    quickSort(a, 0, 9);
+    for (int i = 0; i < 10; i++)
     {
         cout << a[i] << " ";
     }

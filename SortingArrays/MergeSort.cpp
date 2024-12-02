@@ -69,9 +69,9 @@ int main()
 {
     int a[10] = {9, 7, 2, 5, 4, 10, 3, 8, 1, 6};
 
-    mergeSort(a, 0, 9); // Sort all 10 elements
+    mergeSort(a, 0, 9); 
 
-    for (int i = 0; i < 10; ++i) // Display all 10 elements
+    for (int i = 0; i < 10; ++i) 
     {
         cout << a[i] << " ";
     }

@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "barrier": "cpp",
+        "bitset": "cpp",
+        "memory_resource": "cpp"
+    }
+}

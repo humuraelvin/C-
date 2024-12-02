@@ -3,6 +3,8 @@
         "*.embeddedhtml": "html",
         "barrier": "cpp",
         "bitset": "cpp",
-        "memory_resource": "cpp"
-    }
+        "memory_resource": "cpp",
+        "ostream": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

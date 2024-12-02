@@ -3,13 +3,11 @@ using namespace std;
 
 void mergeArrays(int x[], int y[], int a[], int s, int e)
 {
-    int mid = (s+e) / 2;
-
+    int mid = (s + e) / 2;
     int i = s;
-
-    int j = mid +1;
-
+    int j = mid + 1;
     int k = s;
+
     while (i <= mid && j <= e)
     {
         if (x[i] < y[j])
@@ -32,6 +30,7 @@ void mergeArrays(int x[], int y[], int a[], int s, int e)
         k++;
         i++;
     }
+
     while (j <= e)
     {
         a[k] = y[j];
@@ -64,21 +63,18 @@ void mergeSort(int a[], int s, int e)
     mergeSort(x, s, mid);
     mergeSort(y, mid + 1, e);
     mergeArrays(x, y, a, s, e);
-
 }
 
 int main()
 {
-
     int a[10] = {9, 7, 2, 5, 4, 10, 3, 8, 1, 6};
 
-     mergeSort(a, 0, 6);
-     
-    for (int i = 0; i < 7; i++)
+    mergeSort(a, 0, 9); // Sort all 10 elements
+
+    for (int i = 0; i < 10; ++i) // Display all 10 elements
     {
         cout << a[i] << " ";
     }
 
     return 0;
-
 }

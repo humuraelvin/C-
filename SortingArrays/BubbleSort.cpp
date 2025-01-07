@@ -8,7 +8,7 @@ void bubbleSort(int arr[], int n)
         for (int j = 0; j < n - 1 - i; j++)
         {
 
-            cout<<"i="<<i<<" j = "<<j<<" i*j = "<<i*j<<endl;
+           // cout<<"i="<<i<<" j = "<<j<<" i*j = "<<i*j<<endl;
 
             if (arr[j] > arr[j + 1])
             {

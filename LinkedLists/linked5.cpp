@@ -52,8 +52,8 @@ int main()
     Node *n3 = new Node(30);
     Node n4(40);
     Node* head = addAtHead(n1, 40);
-    n1->data=15;
 
+    n1->data=15;
     n1->next = n2;
     n2->next = n3;
     n3->next = &n4;

@@ -1,24 +1,26 @@
 #include<iostream>
 using namespace std;
 
+template <typename T>
 class Node
 {
 private:
     
 public:
-    int data;
+    T data;
     Node *next;
-    Node(int x){
+    Node(T x){
         this->data = x;
         next = NULL;
     }
 };
 
+template<typename T>
 class Queue
 {
 
-    Node *head;
-    Node* tail;
+    Node<T>* head;
+    Node<T>* tail;
     int size;
 
 public:
@@ -38,9 +40,9 @@ public:
     bool isEmpty(){
         return size==0;
     }
-    void enqueue(int ele)
+    void enqueue(T ele)
     {
-        Node *n = new Node(ele);
+        Node<T> *n = new Node<T>(ele);
         if (head == NULL)
         {
             head = n;
@@ -60,14 +62,14 @@ public:
         {
             return;
         }
-        Node *temp = head;
+        Node<T> *temp = head;
         head = head->next;
         temp->next = NULL;
         delete temp;
         size--;
     }
 
-    int front()
+    T front()
     {
         if (isEmpty())
         {
@@ -78,7 +80,7 @@ public:
 
     void display()
     {
-        Node *temp = head;
+        Node<T> *temp = head;
         while (temp != NULL)
         {
             cout << temp->data << " ";
@@ -89,7 +91,7 @@ public:
 
 int main(){
 
-    Queue q;
+    Queue<int> q;
 
     q.enqueue(10);
     q.enqueue(20);

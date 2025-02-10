@@ -1,8 +1,9 @@
-#include<iostream>
-#include<string>
-#include<regex>
+#include <iostream>
+#include <string>
+#include <regex>
 using namespace std;
 
+// Definition of the Patient structure for storing patient information
 struct Patient
 {
     int patient_id;
@@ -12,23 +13,26 @@ struct Patient
     Patient *next;
 };
 
+// Definition of the Doctor structure for storing doctor information
 struct Doctor
 {
     int doctor_id;
     string name;
-    string specializaiton;
+    string specialization;
     Doctor *next;
 };
 
+// Definition of the Appointment structure for storing appointment information
 struct Appointment
 {
     int appointment_id;
-    int doctor_id;
     int patient_id;
+    int doctor_id;
     string appointment_date;
     Appointment *next;
 };
 
+// Pointers to the head nodes of the linked lists
 Patient *patientsHead = nullptr;
 Doctor *doctorsHead = nullptr;
 Appointment *appointmentsHead = nullptr;

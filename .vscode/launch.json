@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/humura/Documents/workings/cpp/AbstractDataTypes/Queue",
-      "program": "/home/humura/Documents/workings/cpp/AbstractDataTypes/Queue/build/Debug/outDebug",
+      "cwd": "/home/humura/Documents/workings/cpp/Structure",
+      "program": "/home/humura/Documents/workings/cpp/Structure/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

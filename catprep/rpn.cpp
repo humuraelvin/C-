@@ -27,7 +27,7 @@ class RPN
                     st.push(v2 + v1);
                 }else if (tokens[i] == "-")
                 {
-                    st.push(v2 = v1)
+                    st.push(v2 - v1)
                 }
                 else if (tokens[i] == "*")
                 {
